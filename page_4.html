@@ -153,11 +153,21 @@
         .container:active {
             cursor: grabbing;
         }
+         .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.4;
+        }
     </style>
 </head>
 
 <body>
-    <video src="images/10.mp4" muted autoplay loop class="video"></video>
+     <video src="videos/10.mp4" autoplay muted loop class="background" slow></video>
     <div class="container">
         <img class="1" src="images/1.jpg" alt="Birthday">
         <img class="2" src="images/2.jpg" alt="Birthday">
